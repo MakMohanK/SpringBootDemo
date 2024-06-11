@@ -1,0 +1,92 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package net.javaguides.springboot.entity;
+
+import java.util.Objects;
+
+public class SalesforceLogin implements EntityBase {
+   private String access_token;
+   private String instance_url;
+   private String id;
+   private String token_type;
+   private String issued_at;
+   private String signature;
+   private String caseType;
+
+   public SalesforceLogin() {
+   }
+
+   public Long getId() {
+      return null;
+   }
+
+   public String getAccess_token() {
+      return this.access_token;
+   }
+
+   public void setAccess_token(String access_token) {
+      this.access_token = access_token;
+   }
+
+   public String getInstance_url() {
+      return this.instance_url;
+   }
+
+   public void setInstance_url(String instance_url) {
+      this.instance_url = instance_url;
+   }
+
+   public String getToken_type() {
+      return this.token_type;
+   }
+
+   public void setToken_type(String token_type) {
+      this.token_type = token_type;
+   }
+
+   public String getIssued_at() {
+      return this.issued_at;
+   }
+
+   public void setIssued_at(String issued_at) {
+      this.issued_at = issued_at;
+   }
+
+   public String getSignature() {
+      return this.signature;
+   }
+
+   public void setSignature(String signature) {
+      this.signature = signature;
+   }
+
+   public void setId(String id) {
+      this.id = id;
+   }
+
+   public int hashCode() {
+      return Objects.hash(new Object[]{this.access_token, this.caseType, this.id, this.instance_url, this.issued_at, this.signature, this.token_type});
+   }
+
+   public boolean equals(Object obj) {
+      if (this == obj) {
+         return true;
+      } else if (!(obj instanceof SalesforceLogin)) {
+         return false;
+      } else {
+         SalesforceLogin other = (SalesforceLogin)obj;
+         return Objects.equals(this.access_token, other.access_token) && Objects.equals(this.caseType, other.caseType) && Objects.equals(this.id, other.id) && Objects.equals(this.instance_url, other.instance_url) && Objects.equals(this.issued_at, other.issued_at) && Objects.equals(this.signature, other.signature) && Objects.equals(this.token_type, other.token_type);
+      }
+   }
+
+   public String toString() {
+      return "SalesforceLogin [access_token=" + this.access_token + ", instance_url=" + this.instance_url + ", id=" + this.id + ", token_type=" + this.token_type + ", issued_at=" + this.issued_at + ", signature=" + this.signature + ", caseType=" + this.caseType + "]";
+   }
+
+   public String getCaseType() {
+      return this.caseType;
+   }
+
+   public void setCaseType(String caseType) {
+      this.caseType = caseType;
+   }
+}
