@@ -1,5 +1,4 @@
 # SpringBootDemo
-PSMA JAVA Test Project 
 
 # springboot-crud-restful-webservices
 ## YouYube Video
